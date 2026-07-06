@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 110" width="100%">
+  <defs>
+    <filter id="pglow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="psoft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="820" height="110" rx="10" fill="#070c0a"/>
+  <line x1="0" y1="55" x2="820" y2="55" stroke="#132018" stroke-width="1"/>
+
+  <!-- ═══ STAGE 1: RECON ═══ -->
+  <rect x="20" y="18" width="130" height="62" rx="7"
+    fill="#070c0a" stroke="#00ff9d" stroke-width="1.5"/>
+  <rect x="20" y="18" width="130" height="62" rx="7"
+    fill="none" stroke="#00ff9d" stroke-width="1.5" opacity="0">
+    <animate attributeName="opacity" values="0;0.5;0" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-width" values="1.5;3;1.5" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="85" y="42" text-anchor="middle" font-family="'Courier New',monospace"
+    font-size="11" font-weight="bold" fill="#00ff9d">🔍 RECON</text>
+  <text x="85" y="58" text-anchor="middle" font-family="'Courier New',monospace"
+    font-size="9" fill="#5c6b64">nmap -sV target</text>
+  <text x="85" y="72" text-anchor="middle" font-family="'Courier New',monospace"
+    font-size="8" fill="#33403a">mohomedazeem17</text>
+
+  <line x1="150" y1="55" x2="190" y2="55" stroke="#00d9a3" stroke-width="1.5" stroke-dasharray="5,3">
+    <animate attributeName="stroke-dashoffset" values="8;0" dur="0.5s" repeatCount="indefinite"/>
+  </line>
+  <polygon points="190,50 200,55 190,60" fill="#00ff9d" filter="url(#psoft)"/>
+
+  <!-- ═══ STAGE 2: SCAN ═══ -->
+  <rect x="200" y="18" width="130" height="62" rx="7"
+    fill="#070c0a" stroke="#00d9ff" stroke-width="1.5"/>
+  <text x="265" y="42" text-anchor="middle" font-family="'Courier New',monospace"
+    font-size="11" font-weight="bold" fill="#00d9ff">🛰 SCAN</text>
+  <text x="265" y="58" text-anchor="middle" font-family="'Courier New',monospace"
+    font-size="9" fill="#5c6b64">vuln-scan --deep</text>
+  <rect x="215" y="67" width="100" height="5" rx="2" fill="#132018"/>
+  <rect x="215" y="67" width="0" height="5" rx="2" fill="#00d9ff">
+    <animate attributeName="width" values="0;100;0" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <line x1="330" y1="55" x2="370" y2="55" stroke="#00d9ff" stroke-width="1.5" stroke-dasharray="5,3">
+    <animate attributeName="stroke-dashoffset" values="8;0" dur="0.5s" repeatCount="indefinite"/>
+  </line>
+  <polygon points="370,50 380,55 370,60" fill="#00d9ff" filter="url(#psoft)"/>
+
+  <!-- ═══ STAGE 3: ANALYZE ═══ -->
+  <rect x="380" y="18" width="130" height="62" rx="7"
+    fill="#070c0a" stroke="#f0d43e" stroke-width="1.5"/>
+  <text x="445" y="42" text-anchor="middle" font-family="'Courier New',monospace"
+    font-size="11" font-weight="bold" fill="#f0d43e">📊 ANALYZE</text>
+  <text x="445" y="58" text-anchor="middle" font-family="'Courier New',monospace"
+    font-size="9" fill="#5c6b64">pandas + plotly</text>
+  <circle cx="420" cy="73" r="4" fill="#f0d43e" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="435" cy="73" r="4" fill="#f0d43e" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1s" begin="0.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="73" r="4" fill="#f0d43e" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="465" cy="73" r="4" fill="#f0d43e" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1s" begin="0.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <line x1="510" y1="55" x2="550" y2="55" stroke="#f0d43e" stroke-width="1.5" stroke-dasharray="5,3">
+    <animate attributeName="stroke-dashoffset" values="8;0" dur="0.5s" repeatCount="indefinite"/>
+  </line>
+  <polygon points="550,50 560,55 550,60" fill="#f0d43e" filter="url(#psoft)"/>
+
+  <!-- ═══ STAGE 4: SECURE ═══ -->
+  <rect x="560" y="18" width="130" height="62" rx="7"
+    fill="#070c0a" stroke="#ff5f7e" stroke-width="1.5"/>
+  <rect x="560" y="18" width="130" height="62" rx="7"
+    fill="none" stroke="#ff5f7e" stroke-width="2" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-width" values="2;5;2" dur="3s" begin="1s" repeatCount="indefinite"/>
+  </rect>
+  <text x="625" y="42" text-anchor="middle" font-family="'Courier New',monospace"
+    font-size="11" font-weight="bold" fill="#ff5f7e">🛡 SECURE</text>
+  <text x="625" y="58" text-anchor="middle" font-family="'Courier New',monospace"
+    font-size="9" fill="#5c6b64">patch + report</text>
+  <text x="625" y="73" text-anchor="middle" font-family="'Courier New',monospace"
+    font-size="8" fill="#33403a">✓ HARDENED</text>
+
+  <!-- Animated packets -->
+  <circle r="5.5" fill="#00ff9d" filter="url(#pglow)">
+    <animateMotion dur="3s" repeatCount="indefinite" path="M20,55 L790,55"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" dur="3s" keyTimes="0;0.05;0.5;0.95;1" repeatCount="indefinite"/>
+    <animate attributeName="r" values="5.5;6.5;5.5" dur="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="4.5" fill="#00d9ff" filter="url(#pglow)">
+    <animateMotion dur="3s" begin="1s" repeatCount="indefinite" path="M20,55 L790,55"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" dur="3s" begin="1s" keyTimes="0;0.05;0.5;0.95;1" repeatCount="indefinite"/>
+  </circle>
+  <circle r="4" fill="#f0d43e" filter="url(#pglow)">
+    <animateMotion dur="3s" begin="2s" repeatCount="indefinite" path="M20,55 L790,55"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" dur="3s" begin="2s" keyTimes="0;0.05;0.5;0.95;1" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3.5" fill="#ff5f7e" filter="url(#pglow)">
+    <animateMotion dur="3s" begin="1.5s" repeatCount="indefinite" path="M20,55 L790,55"/>
+    <animate attributeName="opacity" values="0;0.8;0.8;0.8;0" dur="3s" begin="1.5s" keyTimes="0;0.05;0.5;0.95;1" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Status tag -->
+  <rect x="710" y="26" width="90" height="20" rx="4" fill="#132018"/>
+  <circle cx="722" cy="36" r="4" fill="#00ff9d">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="730" y="40" font-family="'Courier New',monospace" font-size="9" fill="#00ff9d">SYSTEM SECURE</text>
+</svg>
